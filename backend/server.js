@@ -1,12 +1,4 @@
-/** Dependencies inside /backend --->>
- * npm init -y (to create a package.json file inside backend)
- * npm install express cors mongoose dotenv
- * npm install -g nodemon	(nodemon install globally)
- */
-// after installing nodemon, to start the development server (server.js file) -> run this inside /backend -> 'nodemon server'
-
 const express = require('express');
-// const bodyParser = require('body-parser');				// (not needed in the new versions of express)
 const cors = require('cors');
 const mongoose = require('mongoose');
 
@@ -16,7 +8,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 app.use(cors());
-app.use(express.json());		// previously, -> app.use(bodyParser.json());
+app.use(express.json());
 
 const uri = process.env.ATLAS_URI;
 mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true });
