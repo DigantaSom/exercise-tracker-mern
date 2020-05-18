@@ -1,10 +1,3 @@
-/** Dependencies to be installed in /mern-exercise-tracker --->>>
- * npm install bootstrap
- * npm install react-router-dom
- * npm install react-datepicker
- * npm install axios
- */
-
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
